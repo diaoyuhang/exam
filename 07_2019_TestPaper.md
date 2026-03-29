@@ -203,12 +203,14 @@
    }
    public class Driver implements IDriver{
        private String name;
-       System.out.println("MyCar"+name+" is running…");
-       car.run();
+      public void drive(ICar car){
+          System.out.println("MyCar"+name+" is running…");
+          car.run();
+      }
    }
    ```
 
-   (1) 请给出改短成粗所包含的类及其属性与方法、接口及方法；
+   (1) 请给出所包含的类及其属性与方法、接口及方法；
 
    (2) 请给出该段程序的类图。
 
